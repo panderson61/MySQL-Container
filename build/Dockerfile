@@ -4,7 +4,7 @@ MAINTAINER Paul Anderson "panderson@avetta.com"
 
 # Install MySQL pre-requisites
 RUN \
-yum -y install perl pwgen libpwqu libpwquality && \
+yum -y install perl pwgen libpwqu libpwquality yum-utils && \
 yum clean all && \
 rm -fr /var/cache/*
 
