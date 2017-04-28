@@ -1,4 +1,5 @@
 CREATE DATABASE IF NOT EXISTS pics_live;
+USE pics_live;
 CREATE TABLE IF NOT EXISTS `contractor_cron_log` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `conID` int(11) NOT NULL,
@@ -9,4 +10,4 @@ CREATE TABLE IF NOT EXISTS `contractor_cron_log` (
   PRIMARY KEY (`id`),
   KEY `conID` (`conID`),
   KEY `startDate` (`startDate`)
-) DEFAULT CHARSET=utf8 
+) DEFAULT CHARSET=utf8;
